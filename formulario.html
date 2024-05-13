@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<title>Formulario</title>
+<meta charset="utf-8">
+  <meta name="keywords" content="Formulario">
+  <meta name="autor" content="Irina">
+  <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <form  method="post" enctype="application/x-www-form-urlencoded" action="https://">
+        <fieldset  >
+        <legend >Formulario</legend>
+        <div class="datos">Datos del alumno</div> 
+        <p>
+            <label for="username">Nombre de alumno:</label>
+            <input id="username">
+        </p>
+
+        <p>Fecha de nacimiento:</p>
+            
+            <label for=”fecha”>Día, mes y año</label>
+            <input type="date" name=”fecha”/>
+            
+        <p>
+        <p><label for="email">Correo electrónico:</label>
+            <input type=email name="email" required>
+        </p>   
+        <p>
+            <label for="pass">Contraseña: </label>
+            <input type="password" name="pass">
+        </p>
+        
+            <label for=”tfno”>Teléfono: </label>
+            <input type="tel" name=”tfno” placeholder="+34 
+            666 666 666" pattern="+[0-9]{3} [0-9]{3} [0-9]{3}" required/>
+        </p>
+        <p>
+        
+        <p>
+            <label for="numero">Numero de curso:</label>
+            <select name="numero">
+            <option selected value="numero1">Numero 1</option>
+            <option value="numero2">Numero 2</option>
+            <option value="numero3">Numero 3</option>
+            <option value="numero3">Numero 4</option>
+            </select>
+        </p>
+        <p>Genero:
+            <input type="radio" name="radio-group">
+            <span>Hombre</span>
+            <input type="radio" name="radio-group">
+            <span>Mujer</span>
+        </p>
+        <p>
+            <input type="checkbox" required>
+            <span>Tiene un baco</span>
+        </p>
+        
+    </fieldset>         
+    </form>
+
+
+</body>
+</html>
